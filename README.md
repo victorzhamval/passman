@@ -92,7 +92,7 @@ CREATE TABLE users (
 	username VARCHAR(128) NOT NULL UNIQUE,
 	password VARCHAR(255) NOT NULL,
 	description VARCHAR(128) DEFAULT 'Add a description',
-    profile_image VARCHAR(128) NOT NULL,
+    	profile_image VARCHAR(128) NOT NULL,
 	created_at timestamp DEFAULT CURRENT_TIMESTAMP
 );
 
