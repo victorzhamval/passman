@@ -1,4 +1,4 @@
-import { LogoIcon } from '../../globals/icons';
+import { LogoIcon } from '../../globals/Icons';
 
 export default function Logo() {
   return (

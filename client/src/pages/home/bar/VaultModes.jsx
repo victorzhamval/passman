@@ -1,5 +1,5 @@
 import { IconButton } from '../../../components';
-import { GridIcon, ItemIcon, TwoGridIcon } from '../../../globals/icons';
+import { GridIcon, ItemIcon, TwoGridIcon } from '../../../globals/Icons';
 import useMediaQuery from '../../../hooks/useMediaQuery';
 import Storage from '../../../globals/Storage';
 

@@ -73,6 +73,11 @@
   }
 }
 
+.input-wp {
+  width: 100%;
+  position: relative;
+}
+
 .input {
   @include component-layer($width: 320px);
   transition-duration: 200ms;
@@ -97,11 +102,14 @@
     color: $base-color;
   }
 
+  &:focus &__visibility {
+    color: $base-color;
+  }
+
   &--outline {
     outline: 1px solid $base-color-20;
     background: transparent;
   }
-
 
   &--multiline {
     padding: 15px 15px;
@@ -113,6 +121,21 @@
 
   &--multiline::-webkit-scrollbar {
     width: 5px;
+  }
+
+  &--password {
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  &__visibility {
+    position: absolute;
+    height: min-content;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto 0;
+    color: $placeholder-color;
   }
 }
 
@@ -128,7 +151,7 @@
   align-items: center;
   cursor: pointer;
   transition: 200ms;
-  
+
   &--large {
     width: 100%;
   }

@@ -8,7 +8,8 @@ import {
   SecondaryButton,
   Input,
   Link,
-  ImagePicker
+  ImagePicker,
+  PasswordInput
 } from '../../components';
 import './../_auth.scss';
 
@@ -73,22 +74,20 @@ export default function CreateAccount() {
         <LabelLogo />
       </div>
       <Form className="auth__wp">
-        <h2>Create account</h2>
+        <h2 className="auth__header">Create account</h2>
         <Input
           name="username"
           placeholder='Username'
           onChange={handleOnChangeInput}
         />
-        <Input
+        <PasswordInput
           name="password"
           placeholder="Password"
-          type="password"
           onChange={handleOnChangeInput}
         />
-        <Input
+        <PasswordInput
           name="repPassword"
           placeholder='Repeat password'
-          type="password"
           onChange={handleOnChangeInput}
         />
         <ImagePicker
@@ -106,7 +105,7 @@ export default function CreateAccount() {
         />
         <div className="auth__ca-wp">
           <p>Already have an account?</p>
-          <Link to="/login" title="Sign In"/>
+          <Link to="/login" title="Sign In" />
         </div>
       </Form>
     </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CopyIcon } from '../../globals/icons';
+import { CopyIcon } from '../../globals/Icons';
 import Storage from '../../globals/Storage';
 import { ToastUtils, ObjectUtils } from '../../utils';
 import RandomUtils from '../../utils/RandomUtils';

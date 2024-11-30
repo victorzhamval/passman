@@ -1,4 +1,4 @@
-import { HomeIcon, UserIcon, SignOutIcon } from '../../globals/icons';
+import { HomeIcon, UserIcon, SignOutIcon } from '../../globals/Icons';
 import { Logo, LabelLogo } from '../logo/';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import SidebarSection from './SidebarSection';

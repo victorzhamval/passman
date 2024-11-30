@@ -4,6 +4,7 @@ import UsersAPI from '../../api/UsersAPI';
 import Auth from '../../globals/Auth';
 import {
   Input,
+  PasswordInput,
   Link,
   LabelLogo,
   SecondaryButton,
@@ -46,16 +47,15 @@ export default function Login() {
         <LabelLogo />
       </div>
       <Form className="auth__wp">
-        <h2>Sign in</h2>
+        <h2 className="auth__header">Sign in</h2>
         <Input
           name="username"
           placeholder="Username"
           onChange={handleOnChange}
         />
-        <Input
+        <PasswordInput
           name="password"
           placeholder="Password"
-          type="password"
           onChange={handleOnChange}
         />
         {error !== "" && <p className="error">{error}</p>}

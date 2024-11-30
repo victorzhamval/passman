@@ -1,5 +1,5 @@
 import { Button, Input } from "../../../components";
-import { MoreIcon } from "../../../globals/icons";
+import { MoreIcon } from "../../../globals/Icons";
 import { PopupUtils } from "../../../utils";
 import AddVaultPopup from "../popups/AddVaultPopup";
 

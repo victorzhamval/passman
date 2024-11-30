@@ -5,6 +5,10 @@
   align-items: center;
   flex-direction: column;
 
+  &__header {
+    margin-bottom: 10px;
+  }
+
   &__logo-wp {
     margin-bottom: 40px;
     margin-left: 40px;
