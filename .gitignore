@@ -1,0 +1,13 @@
+node_modules
+yarn.lock
+
+client/node_modules
+client/build
+client/.env
+
+server/node_modules
+server/.env
+server/uploads
+
+yarn-debug.log*
+yarn-error.log*

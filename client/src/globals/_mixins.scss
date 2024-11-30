@@ -1,0 +1,43 @@
+@use '../globals/variables' as *;
+
+@mixin box($width, $height, $padding, $background: $div-color) {
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+  background: $background;
+  border-radius: 10px;
+  padding: $padding;
+}
+
+@mixin component-layer($width: min-content, $padding: 0) {
+  width: $width;
+  height: $component-height;
+  min-height: $component-height;
+  border-radius: 10px;
+  border: none;
+  padding: $padding;
+}
+
+@mixin placeholder() {
+  font-size: 15px;
+  font-weight: 600;
+  color: $placeholder-color;
+}
+
+@mixin row($gap: 5px) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+}
+
+@mixin column($gap: 5px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap
+}
+
+@mixin text-overflow() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

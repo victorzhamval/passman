@@ -1,0 +1,50 @@
+@use '../../globals/mixins' as *;
+@use '../../globals/variables' as *;
+
+.account {
+  padding: 20px;
+  align-items: center;
+
+  &__avatar-wp {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  &__avatar-wp:hover::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    background: rgba(0, 24, 25, 0.32);
+  }
+
+  &__username {
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  &__actions {
+    @include row($gap: 10px);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__actions-button {
+    width: 180px;
+  }
+}
